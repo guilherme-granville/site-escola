@@ -1399,7 +1399,11 @@ box-shadow: 0 8px 40px rgba(0, 0, 0, 0.3);
     aspect-ratio: 7 / 9;
     overflow: hidden;
   }
-
+  
+  .h-img{
+   left: 50vw;
+   transform: translateX(50%);
+  }
 
 }
 
