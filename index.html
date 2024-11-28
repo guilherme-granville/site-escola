@@ -25,6 +25,7 @@
 
   <!-- navbar -->
   <div class="under-header" id="inicio"></div>
+  <div class="parallax"></div>
   <header class="header">
     <img class="h-img" src="Assets/imgs/1.webp" alt="Brasão CEEP">
     <a href="#" class="logo"> CEEP</a>
@@ -44,7 +45,7 @@
 
   <!-- parallax -->
 
-  <div class="parallax"></div>
+  
 
 
   <section class="all-pages">
@@ -350,10 +351,14 @@
         </div>
       </div>
 
-
+      <div class="slider-hint">
+        <p>Clique nas setas para navegar</p>
+        <!-- <i class="bx bx-chevrons-right"></i> -->
+      </div>
+      
       <div class="nav">
-        <button class="prev">&#10094;</button>
-        <button class="next">&#10095;</button>
+        <button class="slide-control prev">&#10094;</button>
+        <button class="slide-control next">&#10095;</button>
       </div>
 
       <div class="dots">
@@ -384,7 +389,7 @@
 
     <div class="content">
       <div class="contact-info">
-        <p><strong>Endereço:</strong> R. Dom Pedro II, 1550 - Zona 01, Cianorte - PR, 87200-025</p>
+        <p><strong>Endereço:</strong> <a href="https://maps.app.goo.gl/Jq9RdMvrCTKwh3JY6">R. Dom Pedro II, 1550 - Zona 01, Cianorte - PR, 87200-025</p></a>
         <p><strong>Telefone:</strong><a href="tel://4436319685">(44) 3631-9685</a></p>
       </div>
 
@@ -404,16 +409,19 @@
 
 
       <div class="social-links">
+        <a href="https://www.linkedin.com/school/ceep-cianorte/posts/" target="_blank">
+          <img
+            src="Assets/imgs/linkedin.webp">
+        </a>
         <a href="https://www.facebook.com/ceepcianorte/" target="_blank">
           <img
-            src="https://cdn3.iconfinder.com/data/icons/social-media-2527/24/glyph_facebook_facebook_logo_logo_logotype_letter_f_social_media_social_media-512.png"
-            alt="Facebook">
+            src="Assets/imgs/facebook.webp">
         </a>
         <a href="https://www.instagram.com/ceepcianorte/" target="_blank">
-          <img src="https://www.iconpacks.net/icons/2/free-instagram-logo-icon-3497-thumb.png" alt="Instagram">
+          <img src="Assets/imgs/instagram.webp" alt="Instagram">
         </a>
         <a href="https://wa.me/554436319685" target="_blank">
-          <img src="https://i.pinimg.com/originals/6e/2c/f9/6e2cf920c73d260231a7cb8a16933486.png" alt="WhatsApp">
+          <img src="Assets/imgs/whatsapp.webp" alt="WhatsApp">
         </a>
       </div>
 
@@ -444,7 +452,9 @@
     var swiper = new Swiper(".mySwiper", {
       slidesPerView: 'auto',
       spaceBetween: 30,
+      centeredSlides: true,
       freeMode: true,
+      loop: true,
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
@@ -491,10 +501,13 @@
 
   menuLinks.forEach(link => {
     link.addEventListener('click', () => {
-      checkBox.checked = false; // Fecha o menu
+      checkBox.checked = false;
     });
   });
+
+
 </script>
+
 
 </body>
 </html>
