@@ -1402,7 +1402,7 @@ box-shadow: 0 8px 40px rgba(0, 0, 0, 0.3);
   
   .h-img{
    left: 50vw;
-   transform: translateX(50%);
+   transform: translateX(-50%);
   }
 
 }
